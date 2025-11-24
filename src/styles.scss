@@ -1,0 +1,323 @@
+@import "import.scss";
+$dark_blue: blue;
+$light-green: #00ff00;
+
+$utilities: map-merge($utilities,
+    ("shadow": map-merge(map-get($utilities, "shadow"),
+        (values: map-merge(map-get(map-get($utilities, "shadow"), "values"),
+            (xlg: $box-shadow-xlg),
+          ),
+        ),
+      ),
+    ));
+
+  
+
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.container-full {
+  @include make-container(0);
+  height: 100%;
+}
+
+.logo {
+    max-height: 8rem;
+    min-height: 2rem;
+}
+.nav-galaxy {
+  background-color: #020219 !important;
+}
+
+.dark-galaxy {
+  background-color: #121224 !important;
+}
+
+.blue-galaxy {
+  background-color: #273f55;
+}
+
+$utilities: map-merge($utilities,
+    ("card-body-alt": (property: padding,
+        class: card,
+        responsive: true,
+        values: (alt-body: $card-body-alt),
+      )));
+
+@import "components";
+
+.btn-transparent {
+  background-color: transparent;
+}
+
+.pt-10 {
+  padding-top: 10rem !important;
+}
+
+.fas fa-chevron-up {
+  color: gainsboro;
+}
+
+
+
+:root {
+  --bs-nav-link-font-size: 1.7rem;
+      --bs-body-font-family: "Oswald Variable", sans-serif;
+  --font-body: "Oswald Variable", sans-serif;
+  --font-h1: "Oswald Variable", sans-serif;
+  --font-h2: "Oswald Variable", sans-serif;
+  --font-h3: "Oswald Variable", sans-serif;
+  --font-h4: "Oswald Variable", sans-serif;
+  --font-h5: "Oswald Variable", sans-serif;
+  --font-h6: "Oswald Variable", sans-serif;
+}
+
+:root {
+  --bg-light-blue: rgb(39, 99, 133);
+  --bg-grad-blue: linear-gradient(90deg, rgba(39, 99, 133, 1) 0%, rgba(54, 110, 145, 1) 60%, rgba(212, 185, 185, 1) 100%);
+  --bg-alt-grad-blue: linear-gradient(130deg, rgb(3, 3, 3) 0%, rgba(54, 110, 145, 1) 42%, rgba(212, 185, 185, 0.4) 100%);
+  --bg-grad-black: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(82, 82, 88, 0.7) 85%, rgba(158, 158, 158, 0.7) 100%);
+}
+
+
+
+h1,
+.h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --carousel-item-img: 30vh;
+    --carousel-height: 30vh;
+    --carousel-inner-height: 30vh;
+    --carousel-caption-f-size: 0.8rem;
+  }
+
+
+  .icon-our-values {
+    height: 25vh;
+    width: 45vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  :root {
+    --carousel-item-img: 40vh;
+    --carousel-height: 40vh;
+    --carousel-inner-height: 40vh;
+    --carousel-caption-f-size: 1rem;
+  }
+
+  .icon-our-values {
+    height: 25vh;
+    width: 45vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  :root {
+    --carousel-item-img: 40vh;
+    --carousel-height: 40vh;
+    --carousel-inner-height: 40vh;
+    --carousel-caption-f-size: 1.3rem;
+  }
+
+  .icon-our-values {
+    height: 40vh;
+    width: 45vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  :root {
+    --carousel-item-img: 70vh;
+    --carousel-height: 70vh;
+    --carousel-inner-height: 70vh;
+    --carousel-caption-f-size: 1.4rem;
+  }
+
+  .icon-our-values {
+    height: 30vh;
+    width: 19vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  h1,
+  .h1 {
+    font-size: 50px;
+  }
+
+  :root {
+    --carousel-item-img: 68vh;
+    --carousel-height: 68vh;
+    --carousel-inner-height: 68vh;
+    --carousel-caption-f-size: 1.3rem;
+  }
+
+  .icon-our-values {
+    height: 36vh;
+    width: 30vw;
+  }
+
+}
+
+
+
+
+:root {
+  --icon-img: 3rem;
+  --max-sol-icon-img-h: 4rem;
+  --max-sol-icon-img-w: 4rem;
+}
+
+//footer
+:root {
+  --footer-size: 50%;
+  --footer-color: #222222;
+  --footer-font-color: #fff;
+}
+
+.link-grey {
+  color: $gray-900;
+  text-decoration: none;
+}
+
+.link-grey:hover {
+  color: $dark_blue;
+  text-decoration: none;
+}
+
+.link {
+  color: $dark_blue;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+
+.link-white {
+  color: $white;
+  text-decoration: none;
+
+}
+
+.link-white:hover {
+  color: $dark_blue;
+  text-decoration: none;
+}
+
+
+.link_roca {
+  color: $red;
+  text-decoration: none;
+}
+
+.link_roca:hover {
+  color: $red;
+  text-decoration: none;
+}
+
+.link_none {
+  color: $white;
+  text-decoration: none;
+}
+
+.link_none:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+.link_light_green {
+  color: $light-green;
+  text-decoration: none;
+}
+
+.link_light_green:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+.chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.p-slide {
+  margin-bottom: 0;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}

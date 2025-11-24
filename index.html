@@ -1,0 +1,303 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home - Zr_system</title>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_footer.css">
+
+    <script src="js/bundle.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-galaxy">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Add justify-content-center here -->
+            <div class="collapse navbar-collapse justify-content-center flex-wrap align-content-center" id="navbarNav">
+                <ul class=" navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#services">Services</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="#home"><img class="logo" src="img/logo.png"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="d-flex flex-wrap dark-galaxy" id="home">
+        <div class="col-sm-12 col-md-6 col-lg-6 ps-0 pe-0">
+            <img class="img-fluid w-100 h-100" id="galaxy-img"
+                src="https://img.freepik.com/fotos-premium/fundo-espacial-pixelado-com-planetas-e-estrelas_1282444-204687.jpg?semt=ais_hybrid&w=740&q=80">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 ps-0 pe-0">
+            <p class="h2 text-white mt-3 ms-3 scroll-fade ">Lorem Ipsum é simplesmente um texto fictício da indústria
+                tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos
+                1500, quando um impressor desconhecido pegou uma bandeja de tipos e os misturou para criar um livro de
+                amostras de tipos. Ele sobreviveu não apenas a cinco séculos, mas também à transição para a editoração
+                eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento
+                de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com softwares de editoração
+                eletrônica como o Aldus PageMaker, que incluíam versões de Lorem Ipsum.</p>
+        </div>
+
+    </section>
+    <section class="d-flex blue-galaxy flex-column" id="about-us">
+        <h1 class="text-center text-white mt-5 mb-5">About Us</h1>
+        <div class="d-flex flex-wrap ">
+            <div class="col-sm-12 col-md-6 col-lg-6 ps-0 pe-0">
+                <p class="h2 text-white mt-3 ms-3 scroll-fade ">Lorem Ipsum é simplesmente um texto fictício da
+                    indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria
+                    desde os anos 1500, quando um impressor desconhecido pegou uma bandeja de tipos e os misturou para
+                    criar um livro de amostras de tipos. Ele sobreviveu não apenas a cinco séculos, mas também à
+                    transição para a editoração eletrônica, permanecendo essencialmente inalterado. Foi popularizado na
+                    década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais
+                    recentemente, com softwares de editoração eletrônica como o Aldus PageMaker, que incluíam versões de
+                    Lorem Ipsum.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 ps-0 pe-0">
+                <img class="img-fluid w-100 h-100" id="about-img"
+                    src="https://img.freepik.com/fotos-premium/fundo-espacial-pixelado-com-planetas-e-estrelas_1282444-204687.jpg?semt=ais_hybrid&w=740&q=80">
+            </div>
+        </div>
+    </section>
+    <section class="d-flex flex-wrap" id="games">
+        <div id="canvas-container" class="w-100">
+            <h1 class="text-white " id="game-title">Games</h1>
+            <canvas id="webgl" class="w-100"></canvas>
+            <button id="modalBtn" class="btn-modal-game" data-bs-toggle="modal" data-bs-target="#My-Modal"
+                onclick="abrirModal(this)" data-game-id="0"></button>
+            <!-- SETAS SOBRE O CANVAS -->
+            <button class="carousel-arrow left-arrow" id="btnLeft"><i class="fa fa-arrow-left"></i></button>
+            <button class="carousel-arrow right-arrow" id="btnRight"><i class="fa fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <section id="services">
+        <div id="service-container" class="w-100">
+            <h1 class="text-center text-white " id="service-title">Services</h1>
+            <div class="d-flex flex-wrap justify-content-center">
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center pt-10 pb-3"
+                    id="service-card-1">
+                    <div
+                        class="card dark-galaxy pt-3  shadow-xlg super-rounded-card  flex-row flex-wrap align-content-start align-items-start w-75 h-100 text-center text-white d-flex justify-content-center">
+
+                        <div class="card-alt-body">
+                            <h2 class="card-title text-center">Lorem Ipsum é simplesmente um texto fictício da indústria
+                                tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria
+                                desde os anos 1500, quando um impressor desconhecido pegou uma bandeja de tipos e os
+                                misturou para criar um livro de amostras de tipos. Ele sobreviveu não apenas a cinco
+                                séculos, mas também à transição para a editoração eletrônica, permanecendo
+                                essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas
+                                Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com softwares de
+                                editoração eletrônica como o Aldus PageMaker, que incluíam versões de Lorem Ipsum.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center pt-10 pb-3"
+                    id="service-card-2">
+                    <div
+                        class="card dark-galaxy pt-3  shadow-xlg super-rounded-card  flex-row flex-wrap align-content-start align-items-start w-75 h-100 text-center text-white  d-flex justify-content-center">
+
+                        <div class="card-alt-body">
+                            <h2 class="card-title text-center">Lorem Ipsum é simplesmente um texto fictício da indústria
+                                tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria
+                                desde os anos 1500, quando um impressor desconhecido pegou uma bandeja de tipos e os
+                                misturou para criar um livro de amostras de tipos. Ele sobreviveu não apenas a cinco
+                                séculos, mas também à transição para a editoração eletrônica, permanecendo
+                                essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas
+                                Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com softwares de
+                                editoração eletrônica como o Aldus PageMaker, que incluíam versões de Lorem Ipsum.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center pt-10 pb-3"
+                    id="service-card-3">
+                    <div
+                        class="card dark-galaxy pt-3  shadow-xlg super-rounded-card  flex-row flex-wrap align-content-start align-items-start w-75 h-100 text-center text-white  d-flex justify-content-center">
+                        <div class="card-alt-body">
+                            <h2 class="card-title text-center">Lorem Ipsum é simplesmente um texto fictício da indústria
+                                tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria
+                                desde os anos 1500, quando um impressor desconhecido pegou uma bandeja de tipos e os
+                                misturou para criar um livro de amostras de tipos. Ele sobreviveu não apenas a cinco
+                                séculos, mas também à transição para a editoração eletrônica, permanecendo
+                                essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas
+                                Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com softwares de
+                                editoração eletrônica como o Aldus PageMaker, que incluíam versões de Lorem Ipsum.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-flex dark-galaxy flex-column" id="contact">
+        <h1 class="text-center text-white mt-5 mb-5">Contact Us</h1>
+        <form class="d-flex flex-column align-items-center mb-5">
+            <div class="input-wrapper w-50">
+                <!-- Pixel art topo -->
+                <div class="row">
+                    <div class="col-6">
+                        <!-- Pixel art lateral esquerda -->
+
+                        <img src="img/pixel-top-n.png" class="pixel-art-top-left">
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <!-- Pixel art lateral direita -->
+
+                        <!-- Pixel art lateral esquerda -->
+                        <img src="img/pixel-top-r.png" class="pixel-art-top-right">
+                    </div>
+                </div>
+                <input type="text" placeholder="Digite aqui..." class="form-control w-100 mb-3">
+
+            </div>
+            <div class="input-wrapper w-50 mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="img/pixil-top-2.png" class="pixel-art-top-left">
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <!-- Pixel art lateral esquerda -->
+                    </div>
+
+                </div>
+                <input type=" email" class="form-control w-100 mb-3" placeholder="Email">
+            </div>
+            <div class="input-wrapper w-50 mt-3">
+                <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <img src="img/pixil-top-r-3.png" class="pixel-art-top-right">
+                    </div>
+                </div>
+                <textarea class="form-control w-100 mb-3" rows="5" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary px-4">Send</button>
+        </form>
+
+    </section>
+
+    <div class="modal fade" id="My-Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content dark-galaxy">
+
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Exemplo de Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-white">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-12">
+                            <img src="" id="modal-game-img" class="img-thumbnail nav-galaxy border-0" alt="...">
+                        </div>
+                        <div class="col-12 border-top mt-5 border-white">
+                            <p class="h2 pt-2" id="modal-game-desc">
+
+                            </p>
+                        </div>
+                        <div class="col-12 border-top mt-5 border-white">
+                            <button type="button" class="mt-2 btn btn-dark"><i class="fab fa-steam"></i>Play on
+                                Steam</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="foot" class="nav-galaxy d-flex flex-wrap mt-auto">
+
+        <div class="col-12 nav-galaxy">
+            <div class="d-flex flex-wrap mt-5 justify-content-evenly">
+
+                <div class="col-2 form-group align-self-center p-2">
+                    <div class="col-12">
+                        <h6 data-lang-str="text_onde_estamos">Where are We?</h6>
+
+                        <p><i class="fa-solid fa-map-marker-alt"></i> Ny - Usa</p>
+                        <p data-lang-str="text_telephone">
+                            Contact :
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone-flip"></i>
+                            <a class="link_none" href="https://wa.me/+5511913626461">11 91362-6461</a>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a class="link_none" href="mailto:vendas@tradingeasy.net">vendas@tradingeasy.net</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-2 align-self-center">
+                    <div class="col-12 text-center">
+                        <p>© 2024-2025
+                        </p>
+                        <p data-lang-str="text_copyright">
+                            By Galaxy, All rights reserved.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <img src="img/logo.png" class="img-thumbnail nav-galaxy border-0" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 nav-galaxy pb-5">
+
+            <div class="d-flex flex-wrap justify-content-around">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex justify-content-center pt-10 pb-3">
+                    <button class="circle btn-transparent border-white">
+                        <i class="fab fa-steam"></i>
+                    </button>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex justify-content-center pt-10 pb-3">
+                    <button class="circle btn-transparent border-white">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex justify-content-center pt-10 pb-3">
+                    <button class="circle btn-transparent border-white">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="float-left btn btn-square btn-md scrollToTop">
+            <span class="fas fa-chevron-up"></span>
+        </a>
+    </footer>
+    <!-- Modal -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="js/script.js"></script>
+<script type="module" src="/js/tre.js"></script>
+
+</html>

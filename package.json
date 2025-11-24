@@ -1,0 +1,31 @@
+{
+  "name": "zr_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eduardocksilva",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource-variable/oswald": "^5.2.8",
+    "@fontsource/abel": "^5.0.12",
+    "@fontsource/chakra-petch": "^5.0.20",
+    "@fontsource/open-sans": "^5.0.28",
+    "@fortawesome/fontawesome-free": "^5.10.0",
+    "bootstrap": "^5.0.2",
+    "datatables": "^1.10.18",
+    "datatables.net": "^2.1.4",
+    "datatables.net-colreorder": "^2.0.4",
+    "jquery": "^3.7.1",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.12.4"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "browserify-shim": "^3.8.16",
+    "minify": "^11.2.0",
+    "sass": "^1.77.4"
+  }
+}

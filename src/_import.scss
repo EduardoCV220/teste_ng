@@ -1,0 +1,20 @@
+// 1. Funções
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Variáveis
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark"; // você não tinha!
+
+// 3. Mapas — OBRIGATÓRIO para $theme-colors-rgb
+@import "../node_modules/bootstrap/scss/maps";
+
+// 4. Mixins
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 5. Utilidades — agora funciona
+@import "../node_modules/bootstrap/scss/utilities";
+
+// 6. Suas variáveis personalizadas
+$box-shadow-xlg: 0 1rem 3rem rgba(0,0,0, 0.6);
+$container-full: 100%;
+$card-body-alt: 1rem 1rem;

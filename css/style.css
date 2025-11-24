@@ -1,0 +1,280 @@
+/* Made with love by Mutiullah Samim*/
+#canvas-container {
+  position: relative;
+}
+
+#service-container {
+  position: relative;
+}
+
+#service-card-1 {
+  background-image: url("../img/galaxy-serv-1.jpg");
+}
+#service-card-2 {
+  background-image: url("../img/galaxy-serv-2.jpg");
+}
+#service-card-3 {
+  background-image: url("../img/galaxy-serv-3.jpg");
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 18px;
+  font-size: 32px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.35); /* levemente apagado */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: 0.2s ease;
+  z-index: 20;
+}
+
+.btn-modal-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10rem 12rem;
+  font-size: 32px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0); /* levemente apagado */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.pixel-art-side-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.pixel-art-top-left {
+  height: 50px;
+}
+
+.pixel-art-top-right {
+  height: 50px;
+}
+/* Pixel art no topo */
+
+#game-title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  pointer-events: none; /* evita interferir nos cliques das setas */
+}
+
+#service-title {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  pointer-events: none; /* evita interferir nos cliques das setas */
+}
+
+#webgl {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.carousel-arrow:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+#galaxy-img {
+  object-fit: cover;
+  border-bottom-right-radius: 80%;
+}
+
+#about-img {
+  object-fit: cover;
+  border-bottom-left-radius: 80%;
+}
+
+.icon-img {
+  height: var(--icon-img);
+}
+
+.scroll-fade {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.scroll-fade.show {
+  opacity: 1;
+}
+
+.icon-sol-img {
+  max-width: var(--max-sol-icon-img-w);
+  width: auto;
+  max-height: var(--max-sol-icon-img-h);
+  height: auto;
+}
+
+.title_desc_produtos {
+  margin-top: 0.5rem;
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.logo-menu {
+  max-width: 40% !important;
+}
+
+.super-rounded-card {
+  border-radius: 2rem;
+}
+
+.modal_close_img {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.circle {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_close_img:hover,
+.modal_close_img:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bg-blue {
+  background-color: var(--bg-light-blue);
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+html,
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.container {
+  height: 100%;
+  align-content: center;
+}
+
+.card-header h3 {
+  color: rgb(0, 0, 0);
+}
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: #ff1212a5;
+  color: black;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+html,
+.l-header .widget,
+.menu-item-object-us_page_block {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16;
+  line-height: 24px;
+}
+
+h1 {
+  font-family: var(--font-h1);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--font-h1);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+}
+
+.card-title {
+  float: left;
+  font-family: var(--font-body);
+}
+
+.page-title {
+  height: 40vh;
+}
+
+.text-spacing {
+  letter-spacing: 10px;
+}
+
+@keyframes slide {
+  0%,
+  15%,
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}

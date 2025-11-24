@@ -1,0 +1,164 @@
+footer {
+    
+    height: var(--footer-size);
+    background-color:var(--footer-color);
+    color: var(--footer-font-color);
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .icons {
+    margin-top: 3%;
+}
+
+.fab {
+    color: #fff;
+}
+
+
+
+.icon {
+    padding-left: 15px;
+}
+
+.scrollToTop {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    z-index: 2;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    border: none !important;
+
+}
+
+.popup-close{
+    color: black;
+}
+
+.btnWhatsappContainer {
+    position: fixed;
+    bottom: 2%;
+    z-index: 2;
+    right: 2%;
+    display: none;
+    border-radius: 10px;
+
+}
+
+
+
+.scrollToTop span {
+
+    color: rgb(255, 255, 255);
+}
+
+.btnWhats {
+    border-radius: 30px;
+}
+
+.whatsappContainer {
+    position: fixed;
+    bottom: 2%;
+    z-index: 2;
+    right: 2%;
+    display: block;
+    background-color: rgb(255, 255, 255);
+
+    outline-style: none;
+    border: 1px solid #ccc !important;
+    border-radius: 10px;
+
+}
+
+#cookie-law-info-again {
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    z-index: 1;
+    box-shadow: #161616 2px 2px 5px 2px;
+    position: fixed;
+    padding: 5px 10px;
+    font-size: 10pt;
+    font-family: inherit;
+    width: auto;
+    bottom: 0px;
+    right: 20%;
+
+    line-height: 24px;
+}
+
+#cookie_hdr_show-again {
+    cursor: pointer;
+}
+
+#cookie-law-info-bar {
+    box-shadow: 0 -1px 10px 0 rgba(172, 171, 171, 0.3);
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    font-family: inherit;
+    bottom: 0px;
+    position: fixed;
+    line-height: 24px;
+    padding: 5px 10px;
+    z-index: 1;
+    display: none;
+}
+
+#cookie_action_close_header {
+    line-height: 1;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(97, 162, 41);
+    font-size: 13px;
+    padding: 9px 15px;
+    text-decoration: none;
+    cursor: pointer
+}
+
+
+@media only screen and (max-width: 600px) {
+    .whatsappContainer{
+        width: 30%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+
+   
+    .whatsappContainer{
+        width: 18%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+
+   
+    .whatsappContainer{
+        width: 18%;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+   
+    .whatsappContainer{
+        width: 12%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+    .whatsappContainer{
+        width: 10%;
+    }
+}
